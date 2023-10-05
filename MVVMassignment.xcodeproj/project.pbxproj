@@ -17,10 +17,11 @@
 		2E37091A2AC36ABD00E46D7E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2E3709192AC36ABD00E46D7E /* Kingfisher */; };
 		2E3709202AC4B51600E46D7E /* FruitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E37091F2AC4B51500E46D7E /* FruitsModel.swift */; };
 		2E3709242AC4C66800E46D7E /* FruitImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3709232AC4C66800E46D7E /* FruitImages.swift */; };
+		2E8884442ACDF818001BEB52 /* FruitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8884432ACDF818001BEB52 /* FruitsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E3709002AC3651000E46D7E /* improvedAssignment4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = improvedAssignment4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E3709002AC3651000E46D7E /* MVVMassignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMassignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E3709032AC3651000E46D7E /* improvedAssignment4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = improvedAssignment4App.swift; sourceTree = "<group>"; };
 		2E3709052AC3651000E46D7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E3709072AC3651800E46D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,6 +32,7 @@
 		2E3709162AC3660900E46D7E /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		2E37091F2AC4B51500E46D7E /* FruitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsModel.swift; sourceTree = "<group>"; };
 		2E3709232AC4C66800E46D7E /* FruitImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitImages.swift; sourceTree = "<group>"; };
+		2E8884432ACDF818001BEB52 /* FruitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,7 @@
 		2E3709012AC3651000E46D7E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E3709002AC3651000E46D7E /* improvedAssignment4.app */,
+				2E3709002AC3651000E46D7E /* MVVMassignment.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +70,7 @@
 				2E3709032AC3651000E46D7E /* improvedAssignment4App.swift */,
 				2E3709252AC5307700E46D7E /* Views */,
 				2E37091E2AC4B4E000E46D7E /* Model */,
+				2E8884422ACDF7DB001BEB52 /* ViewModels */,
 				2E3709072AC3651800E46D7E /* Assets.xcassets */,
 				2E3709092AC3651900E46D7E /* improvedAssignment4.entitlements */,
 				2E37090A2AC3651900E46D7E /* Preview Content */,
@@ -102,12 +105,20 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		2E8884422ACDF7DB001BEB52 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2E8884432ACDF818001BEB52 /* FruitsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2E3708FF2AC3651000E46D7E /* improvedAssignment4 */ = {
+		2E3708FF2AC3651000E46D7E /* MVVMassignment */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E37090F2AC3651900E46D7E /* Build configuration list for PBXNativeTarget "improvedAssignment4" */;
+			buildConfigurationList = 2E37090F2AC3651900E46D7E /* Build configuration list for PBXNativeTarget "MVVMassignment" */;
 			buildPhases = (
 				2E3708FC2AC3651000E46D7E /* Sources */,
 				2E3708FD2AC3651000E46D7E /* Frameworks */,
@@ -117,12 +128,12 @@
 			);
 			dependencies = (
 			);
-			name = improvedAssignment4;
+			name = MVVMassignment;
 			packageProductDependencies = (
 				2E3709192AC36ABD00E46D7E /* Kingfisher */,
 			);
 			productName = improvedAssignment4;
-			productReference = 2E3709002AC3651000E46D7E /* improvedAssignment4.app */;
+			productReference = 2E3709002AC3651000E46D7E /* MVVMassignment.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -140,7 +151,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2E3708FB2AC3650F00E46D7E /* Build configuration list for PBXProject "improvedAssignment4" */;
+			buildConfigurationList = 2E3708FB2AC3650F00E46D7E /* Build configuration list for PBXProject "MVVMassignment" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -156,7 +167,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E3708FF2AC3651000E46D7E /* improvedAssignment4 */,
+				2E3708FF2AC3651000E46D7E /* MVVMassignment */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E3709062AC3651000E46D7E /* ContentView.swift in Sources */,
+				2E8884442ACDF818001BEB52 /* FruitsViewModel.swift in Sources */,
 				2E3709242AC4C66800E46D7E /* FruitImages.swift in Sources */,
 				2E3709042AC3651000E46D7E /* improvedAssignment4App.swift in Sources */,
 				2E3709202AC4B51600E46D7E /* FruitsModel.swift in Sources */,
@@ -375,7 +387,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E3708FB2AC3650F00E46D7E /* Build configuration list for PBXProject "improvedAssignment4" */ = {
+		2E3708FB2AC3650F00E46D7E /* Build configuration list for PBXProject "MVVMassignment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E37090D2AC3651900E46D7E /* Debug */,
@@ -384,7 +396,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E37090F2AC3651900E46D7E /* Build configuration list for PBXNativeTarget "improvedAssignment4" */ = {
+		2E37090F2AC3651900E46D7E /* Build configuration list for PBXNativeTarget "MVVMassignment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E3709102AC3651900E46D7E /* Debug */,
